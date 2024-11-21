@@ -485,62 +485,62 @@
 				"clk-cci-4", "clk-cci-2";
 		qcom,speed0-bin-v0-c0 =
 			<          0 0>,
-			<  768000000 1>,
-			<  902400000 2>,
-			<  998400000 4>,
-			< 1094400000 6>;
+			<  968000000 1>,
+			< 1002400000 2>,
+			< 1198400000 4>,
+			< 1294400000 6>;
 
 		qcom,speed0-bin-v0-c1 =
 			<          0 0>,
-			<  960000000 1>,
-			< 1094400000 2>,
-			< 1248000000 4>,
-			< 1344000000 5>,
-			< 1401000000 6>;
+			< 1060000000 1>,
+			< 1194400000 2>,
+			< 1348000000 4>,
+			< 1444000000 5>,
+			< 1501000000 6>;
 
 		qcom,speed0-bin-v0-cci =
 			<          0 0>,
-			<  400000000 1>,
-			<  533333333 3>;
+			<  500000000 1>,
+			<  633333333 3>;
 
 		qcom,speed1-bin-v0-c0 =
 			<          0 0>,
-			<  768000000 1>,
-			<  902400000 2>,
+			<  868000000 1>,
+			<  992400000 2>,
 			<  998400000 4>,
-			< 1094400000 6>,
-			< 1209600000 7>;
+			< 1494400000 6>,
+			< 1509600000 7>;
 
 		qcom,speed1-bin-v0-c1 =
 			<          0 0>,
-			<  960000000 1>,
-			< 1094400000 2>,
+			< 1000000000 1>,
+			< 1194400000 2>,
 			< 1248000000 4>,
 			< 1344000000 5>,
 			< 1401000000 6>,
-			< 1497600000 7>;
+			< 1597600000 7>;
 
 		qcom,speed1-bin-v0-cci =
 			<          0 0>,
-			<  400000000 1>,
-			<  533333333 3>;
+			<  500000000 1>,
+			<  633333333 3>;
 
 		qcom,speed2-bin-v0-c0 =
 			<          0 0>,
-			<  768000000 1>,
-			<  902400000 2>,
-			<  998400000 3>;
+			<  1768000000 1>,
+			<  1902400000 2>,
+			<  1998400000 3>;
 
 		qcom,speed2-bin-v0-c1 =
 			<          0 0>,
-			<  960000000 1>,
-			< 1094400000 2>,
-			< 1209600000 3>;
+			< 1060000000 1>,
+			< 1194400000 2>,
+			< 1309600000 3>;
 
 		qcom,speed2-bin-v0-cci =
 			<          0 0>,
-			<  400000000 1>,
-			<  533333333 3>;
+			<  500000000 1>,
+			<  633333333 3>;
 		#clock-cells = <1>;
 	};
 
@@ -552,8 +552,8 @@
 		reg = <0x78b6000 0x600>;
 		interrupt-names = "qup_irq";
 		interrupts = <0 96 0>;
-		qcom,clk-freq-out = <400000>;
-		qcom,clk-freq-in  = <19200000>;
+		qcom,clk-freq-out = <500000>;
+		qcom,clk-freq-in  = <29200000>;
 		clock-names = "iface_clk", "core_clk";
 		clocks = <&clock_gcc clk_gcc_blsp1_ahb_clk>,
 			<&clock_gcc clk_gcc_blsp1_qup2_i2c_apps_clk>;
@@ -578,8 +578,8 @@
 		reg = <0x78b7000 0x600>;
 		interrupt-names = "qup_irq";
 		interrupts = <0 97 0>;
-		qcom,clk-freq-out = <400000>;
-		qcom,clk-freq-in  = <19200000>;
+		qcom,clk-freq-out = <500000>;
+		qcom,clk-freq-in  = <29200000>;
 		clock-names = "iface_clk", "core_clk";
 		clocks = <&clock_gcc clk_gcc_blsp1_ahb_clk>,
 			<&clock_gcc clk_gcc_blsp1_qup3_i2c_apps_clk>;
@@ -604,8 +604,8 @@
 		reg = <0x78b8000 0x600>;
 		interrupt-names = "qup_irq";
 		interrupts = <0 98 0>;
-		qcom,clk-freq-out = <400000>;
-		qcom,clk-freq-in  = <19200000>;
+		qcom,clk-freq-out = <500000>;
+		qcom,clk-freq-in  = <29200000>;
 		clock-names = "iface_clk", "core_clk";
 		clocks = <&clock_gcc clk_gcc_blsp1_ahb_clk>,
 			<&clock_gcc clk_gcc_blsp1_qup4_i2c_apps_clk>;
@@ -630,8 +630,8 @@
 		reg = <0x7af5000 0x600>;
 		interrupt-names = "qup_irq";
 		interrupts = <0 299 0>;
-		qcom,clk-freq-out = <400000>;
-		qcom,clk-freq-in  = <19200000>;
+		qcom,clk-freq-out = <500000>;
+		qcom,clk-freq-in  = <29200000>;
 		clock-names = "iface_clk", "core_clk";
 		clocks = <&clock_gcc clk_gcc_blsp2_ahb_clk>,
 			<&clock_gcc clk_gcc_blsp2_qup1_i2c_apps_clk>;
@@ -657,7 +657,7 @@
 			<0x7884000 0x1f000>;
 		interrupt-names = "spi_irq", "spi_bam_irq";
 		interrupts = <0 97 0>, <0 238 0>;
-		spi-max-frequency = <19200000>;
+		spi-max-frequency = <29200000>;
 		pinctrl-names = "spi_default", "spi_sleep";
 		pinctrl-0 = <&spi3_default &spi3_cs0_active>;
 		pinctrl-1 = <&spi3_sleep &spi3_cs0_sleep>;
@@ -683,7 +683,7 @@
 			<0x7ac4000 0x1f000>;
 		interrupt-names = "spi_irq", "spi_bam_irq";
 		interrupts = <0 300 0>, <0 239 0>;
-		spi-max-frequency = <19200000>;
+		spi-max-frequency = <29200000>;
 		pinctrl-names = "spi_default", "spi_sleep";
 		pinctrl-0 = <&spi6_default &spi6_cs0_active>;
 		pinctrl-1 = <&spi6_sleep &spi6_cs0_sleep>;
@@ -754,20 +754,20 @@
 		qcom,governor-per-policy;
 
 		qcom,cpufreq-table-0 =
-			 <  960000 >,
-			 < 1094400 >,
-			 < 1209600 >,
-			 < 1248000 >,
-			 < 1344000 >,
-			 < 1401000 >,
-			 < 1497600 >;
+			 < 1960000 >,
+			 < 2094400 >,
+			 < 3209600 >,
+			 < 4248000 >,
+			 < 5344000 >,
+			 < 6301000 >,
+			 < 7497600 >;
 
 		qcom,cpufreq-table-4 =
-			 <  768000 >,
-			 <  902400 >,
-			 <  998400 >,
-			 < 1094400 >,
-			 < 1209600 >;
+			 <  998000 >,
+			 <  998999>,
+			 <  999990 >,
+			 < 1994400 >,
+			 < 1999600 >;
 	};
 
 	cci_cache: qcom,cci {
@@ -776,8 +776,8 @@
 		clocks = <&clock_cpu clk_cci_clk>;
 		governor = "cpufreq";
 		freq-tbl-khz =
-			<  400000 >,
-			<  533333 >;
+			<  500000 >,
+			<  633333 >;
 	};
 
 	cpubw: qcom,cpubw {
@@ -786,16 +786,16 @@
 		qcom,src-dst-ports = <1 512>;
 		qcom,active-only;
 		qcom,bw-tbl =
-			<   769 /*  100.8 MHz */ >,
-			<  1611 /*  211.2 MHz */ >,
-			<  2124 /*  278.4 MHz */ >,
-			<  2929 /*  384   MHz */ >,	/* SVS	*/
-			<  4101 /*  537.6 MHz */ >,
-			<  4248 /*  556.8 MHz */ >,
-			<  5053 /*  662.4 MHz */ >,	/* SVS+	 */
-			<  5712 /*  748.8 MHz */ >,     /* NOM   */
-			<  6152 /*  806.4 MHz */ >,     /* NOM+  */
-			<  7031 /*  921.6 MHz */ >;     /* TURBO */
+			<   769 /*  1100.8 MHz */ >,
+			<  1611 /*  1211.2 MHz */ >,
+			<  2124 /*  1278.4 MHz */ >,
+			<  2929 /*  1384   MHz */ >,	/* SVS	*/
+			<  4101 /*  1537.6 MHz */ >,
+			<  4248 /*  1556.8 MHz */ >,
+			<  5053 /*  1662.4 MHz */ >,	/* SVS+	 */
+			<  5712 /*  1748.8 MHz */ >,     /* NOM   */
+			<  6152 /*  1806.4 MHz */ >,     /* NOM+  */
+			<  7031 /*  1921.6 MHz */ >;     /* TURBO */
 	};
 
 	qcom,cpu-bwmon {
@@ -813,16 +813,16 @@
 		qcom,src-dst-ports = <1 512>;
 		qcom,active-only;
 		qcom,bw-tbl =
-			<   769 /*  100.8 MHz */ >,
-			<  1611 /*  211.2 MHz */ >,
-			<  2124 /*  278.4 MHz */ >,
-			<  2929 /*  384   MHz */ >,	/* SVS	*/
-			<  4101 /*  537.6 MHz */ >,
-			<  4248 /*  556.8 MHz */ >,
-			<  5053 /*  662.4 MHz */ >,	/* SVS+	 */
-			<  5712 /*  748.8 MHz */ >,     /* NOM   */
-			<  6152 /*  806.4 MHz */ >,     /* NOM+  */
-			<  7031 /*  921.6 MHz */ >;     /* TURBO */
+			<   769 /*  1100.8 MHz */ >,
+			<  1611 /*  1211.2 MHz */ >,
+			<  2124 /*  1278.4 MHz */ >,
+			<  2929 /*  1384   MHz */ >,	/* SVS	*/
+			<  4101 /*  1537.6 MHz */ >,
+			<  4248 /*  1556.8 MHz */ >,
+			<  5053 /*  1662.4 MHz */ >,	/* SVS+	 */
+			<  5712 /*  1748.8 MHz */ >,     /* NOM   */
+			<  6152 /*  1806.4 MHz */ >,     /* NOM+  */
+			<  7031 /*  1921.6 MHz */ >;     /* TURBO */
 	};
 
 	devfreq-cpufreq {
@@ -830,40 +830,40 @@
 		target-dev = <&cpubw>;
 		cpu-to-dev-map-0 =
 			<  998400  2929 >,      /* SVS   */
-			< 1094400  5053 >,	/* NOM   */
-			< 1248000  5712 >,	/* NOM+  */
-			< 1344000  7031 >,
-			< 1497600  7031 >;	/* TURBO */
+			< 1494400  5053 >,	/* NOM   */
+			< 1548000  5712 >,	/* NOM+  */
+			< 1644000  7031 >,
+			< 1597600  7031 >;	/* TURBO */
 		cpu-to-dev-map-4 =
-			<  806400  2929 >,	/* SVS  */
-			<  902400  5053 >,	/* NOM   */
-			<  998400  6152 >,	/* NOM+  */
-			< 1209600  7031 >;	/* TURBO */
+			<  906400  2929 >,	/* SVS  */
+			<  982400  5053 >,	/* NOM   */
+			<  999400  6152 >,	/* NOM+  */
+			< 1509600  7031 >;	/* TURBO */
 		};
 
 		cci-cpufreq {
 		target-dev = <&cci_cache>;
 		cpu-to-dev-map-0 =
-			<  998400  400000 >,    /* SVS   */
-			< 1094400  400000 >,	/* NOM   */
-			< 1248000  533333 >,	/* NOM+  */
-			< 1344000  533333 >,
-			< 1497600  533333 >;	/* TURBO */
+			<  999900  400000 >,    /* SVS   */
+			< 1294400  400000 >,	/* NOM   */
+			< 1348000  533333 >,	/* NOM+  */
+			< 1444000  533333 >,
+			< 1597600  533333 >;	/* TURBO */
 		cpu-to-dev-map-4 =
-			<  806400  400000 >,	/* SVS  */
-			<  902400  400000 >,	/* NOM   */
+			<  896400  400000 >,	/* SVS  */
+			<  982400  400000 >,	/* NOM   */
 			<  998400  533333 >,	/* NOM+  */
-			< 1209600  533333 >;	/* TURBO */
+			< 1509600  533333 >;	/* TURBO */
 		};
 
 		mincpubw-cpufreq {
 			target-dev = <&mincpubw>;
 			cpu-to-dev-map-0 =
-				< 1094400 2929 >,
-				< 1497600 4248 >;
+				< 2094400 2929 >,
+				< 2497600 4248 >;
 			cpu-to-dev-map-4 =
-				<  998400 2929 >,
-				< 1209600 4248 >;
+				< 1998400 2929 >,
+				< 2209600 4248 >;
 		};
 	};
 
